@@ -41,9 +41,8 @@ function App() {
   };
 
   const contactDel = id => {
-    setContacts(prevState => ({
-      contacts: prevState.contacts.filter(contact => contact.id !== id),
-    }));
+    setContacts(contacts.filter(contact => contact.id !== id),
+    );
   };
 
   
